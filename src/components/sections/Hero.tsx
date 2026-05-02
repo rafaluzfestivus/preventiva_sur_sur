@@ -16,7 +16,7 @@ export function Hero() {
                     muted
                     playsInline
                     className="w-full h-full object-cover"
-                    poster="/hero-new.jpg"
+                    poster="/img-1.jpg"
                 >
                     <source src="/hero-video.mp4" type="video/mp4" />
                 </video>
@@ -83,7 +83,7 @@ export function Hero() {
                         className="mb-8 md:mb-0 order-1 md:order-2"
                     >
                         <Image
-                            src="/logo-preventiva-sur.png"
+                            src="/Preventiva-Logo-Sur.png"
                             alt="Preventiva Sur - Instalación de Redes en Málaga"
                             width={500}
                             height={250}
