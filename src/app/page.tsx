@@ -7,7 +7,6 @@ import { Testimonials } from "@/components/sections/Testimonials";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { AboutUs } from "@/components/sections/AboutUs";
-import { ServiceArea } from "@/components/sections/ServiceArea";
 
 export default function Home() {
   return (
@@ -20,7 +19,6 @@ export default function Home() {
       <AboutUs />
       <Gallery />
       <Testimonials />
-      <ServiceArea />
       <ContactSection />
     </>
   );

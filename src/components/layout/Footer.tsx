@@ -10,7 +10,7 @@ export function Footer() {
                     <div className="space-y-4">
                         <Link href="/" className="inline-block relative">
                             <Image
-                                src="/logo-preventiva-sur.png"
+                                src="/Preventiva-Logo-Sur.png"
                                 alt="Preventiva Sur Logo"
                                 width={180}
                                 height={50}
@@ -76,7 +76,7 @@ export function Footer() {
                             </li>
                             <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-yellow-400 shrink-0" />
-                                <span>Málaga y Área Metropolitana.<br /><span className="text-slate-500">Servicio en toda Andalucía.</span></span>
+                                <span>Málaga y toda Andalucía.</span>
                             </li>
                         </ul>
                     </div>
