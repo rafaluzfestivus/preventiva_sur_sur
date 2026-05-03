@@ -138,8 +138,7 @@ export function ContactSection() {
                                 <div>
                                     <h3 className="font-bold text-xl mb-1">Área de Servicio</h3>
                                     <p className="text-slate-300 text-lg">
-                                        Málaga y Área Metropolitana<br />
-                                        <span className="text-sm text-slate-500">Servicio en toda Andalucía.</span>
+                                        Málaga y toda Andalucía
                                     </p>
                                 </div>
                             </div>
