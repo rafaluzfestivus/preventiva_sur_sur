@@ -6,29 +6,34 @@ import { useState } from "react";
 export function Testimonials() {
     const testimonials = [
         {
-            name: "Ana Martínez",
-            location: "Málaga Centro",
-            text: "Llevaba meses buscando una solución para mis dos gatos en el balcón. Mandé una foto por WhatsApp y en menos de 24 horas ya tenía presupuesto. La instalación fue limpia, rápida y los chicos super amables. La red es prácticamente invisible y mis gatos ya disfrutan del sol sin que yo me muera de angustia. ¡Totalmente recomendable!",
+            name: "Ramon del Pino",
+            location: "Almería",
+            text: "Profesionales 100%, trabajadores y buenas personas. El trabajo que han hecho en mi terraza es espectacular, llevaba mucho tiempo buscando algo así, y ha superado mis expectativas. Lo recomiendo totalmente, a cualquiera que tenga mascotas o niños pequeños.",
         },
         {
-            name: "Miguel Sánchez",
+            name: "Quiroyanna",
             location: "Marbella",
-            text: "Llevaba dos años sufriendo con las palomas en la terraza. Manchaban todo, hacían ruido y era imposible limpiar. Llamé a Preventiva Sur y en tres días solucionaron el problema de forma definitiva. La red apenas se ve y las palomas no han vuelto. Ojalá lo hubiera hecho antes.",
+            text: "Encantada con el servicio. Vinieron a instalar una red de seguridad para mi bebé y fueron increíblemente atentos en todo momento. Se tomaron el tiempo necesario para asegurarse de que la red quedara perfectamente firme y bien colocada, revisando cada detalle y explicándome cómo quedaba todo. Me transmitieron mucha confianza y profesionalidad. Ahora puedo estar tranquila sabiendo que mi bebé está mucho más seguro. Los recomiendo 100 x 100 y sin duda volveré a llamarles para futuros trabajos. ¡Muchas gracias por el trabajo tan cuidado!",
         },
         {
-            name: "Lucía Ramírez",
-            location: "Torremolinos",
-            text: "Instalamos las redes de seguridad infantil en todas las ventanas del piso. Tenemos una niña de 2 años muy inquieta y desde el primer momento nos preocupó la seguridad. El equipo fue muy profesional, explicaron todo el proceso y terminaron en pocas horas. Ahora respiramos tranquilos.",
+            name: "Isabel Patricia Vázquez Viruel",
+            location: "Málaga",
+            text: "Ha sido genial trabajar con preventiva Sur. Ahora mi terraza está segura. Han sido muy formales en tiempos, ejecución y el presupuesto muy ajustado. Maravilloso poder encontrar profesionales así.",
         },
         {
-            name: "Roberto Jiménez",
-            location: "Fuengirola",
-            text: "Pedí presupuesto a varias empresas y Preventiva Sur fue la más competitiva y la que mejores referencias tenía. El resultado superó mis expectativas: la red está perfectamente tensada, sin arrugas, y la fijación en la pared quedó impecable. Atención al cliente de diez.",
+            name: "Alba Gil",
+            location: "Jaén",
+            text: "Sin duda un acierto total. Gente profesional, puntual, muy agradable y con excelente relación calidad / precio. He puesto mallas en todas las ventanas de mi casa y terraza, como protección para los críos, han quedado estupendamente bien, les estoy muy agradecida.",
         },
         {
-            name: "Carmen Vidal",
-            location: "Benalmádena",
-            text: "Mi gato se cayó del balcón hace dos años y por suerte sobrevivió. Desde entonces busqué la mejor protección posible. Preventiva Sur instaló una red que cubre cada rincón sin dejar ni un hueco. El material es de una calidad increíble y el presupuesto fue justo. No dudaría en volver a contratar su servicio.",
+            name: "Sara Navarrete Garcia",
+            location: "Málaga",
+            text: "Busqué en Google una empresa para poder poner una malla en mi ventana para que mis gatas se pudiesen asomar 😊 Les hablé y al momento se ponen en contacto contigo, me citaron al día siguiente y así fue, son super amables y simpáticos y sobre todo súper profesionales! Así da gusto! Mil gracias por todo que sepan que os voy a recomendar! Un saludo.",
+        },
+        {
+            name: "Juan Antonio Lebron",
+            location: "Churriana",
+            text: "Magnífico trabajo realizado. Nuestra gata ahora se siente protegida y nosotros tranquilos sabiendo que puede estar en la azotea y casa sin darnos ningún susto. Mil gracias a Richard y compañeros por el gran trabajo.",
         },
     ];
 
