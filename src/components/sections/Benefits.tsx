@@ -8,9 +8,9 @@ export function Benefits() {
         "Resistencia Certificada: Soportan hasta 150kg/m².",
         "Tratamiento Anti-UV: Larga durabilidad expuestas al sol.",
         "Máxima Estética: No alteran la fachada ni las vistas.",
-        "Material Ignífugo y No Tóxico.",
+        "Material No Inflamable y No Tóxico.",
         "Instalación sin Obras molestas.",
-        "Garantía de 3 años en materiales e instalación.",
+        "Garantía de 2 años en materiales e instalación.",
         "Servicio a nivel nacional.",
     ];
 

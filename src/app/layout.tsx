@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Instalación de Redes de Protección en Málaga | Preventiva Sur",
-  description: "Especialistas en instalación de redes de protección para balcones, ventanas y terrazas en Málaga y Andalucía. Resistencia de 150kg/m² y 3 años de garantía.",
+  description: "Especialistas en instalación de redes de protección para balcones, ventanas y terrazas en Málaga y Andalucía. Resistencia de 150kg/m² y 2 años de garantía.",
   keywords: ["redes de protección málaga", "mallas de seguridad málaga", "redes para balcones málaga", "redes para gatos málaga", "seguridad infantil ventanas málaga", "instalación redes málaga", "mallas anticaídas", "protección terrazas málaga", "Preventiva Sur", "precio redes protección", "presupuesto mallas seguridad", "instaladores redes andalucía"],
   authors: [{ name: "Preventiva Sur", url: "https://preventivasur.com" }],
   creator: "Preventiva Sur",

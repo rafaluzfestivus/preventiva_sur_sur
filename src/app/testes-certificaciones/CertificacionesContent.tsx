@@ -18,8 +18,8 @@ export default function CertificacionesContent() {
         },
         {
             icon: <Flame className="w-12 h-12 text-yellow-500" />,
-            title: "Material Ignífugo",
-            text: "Material No Tóxico e Ignífugo: Nuestras mallas no son inflamables y son totalmente seguras para el contacto con niños y mascotas, cumpliendo con las normativas europeas."
+            title: "Material No Inflamable",
+            text: "Material No Tóxico y No Inflamable: Nuestras mallas no son inflamables y son totalmente seguras para el contacto con niños y mascotas, cumpliendo con las normativas europeas."
         },
         {
             icon: <EyeOff className="w-12 h-12 text-yellow-500" />,
