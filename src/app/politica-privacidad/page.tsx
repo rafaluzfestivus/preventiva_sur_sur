@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
 
                 <h2 className="text-2xl font-bold mt-8 mb-4 text-slate-900">1. Responsable del Tratamiento</h2>
                 <p>
-                    Los datos personales recabados a través de este sitio web son responsabilidad de Preventiva Sur.<br />
+                    Los datos personales recabados a través de este sitio web son responsabilidad de <strong>Richard Peñarroya Gutiérrez</strong> (Preventiva Sur), con NIF/CIF 25719133G.<br />
                     <strong>Correo electrónico de contacto:</strong> contacto@preventivasur.com<br />
                     <strong>Teléfono:</strong> 615 744 742<br />
                     Ubicación: Málaga, Andalucía (Prestamos servicio en toda el Área Metropolitana de Málaga y Andalucía).
@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
                         <strong>Prestación de servicios:</strong> Para llevar a cabo la instalación de redes de protección y servicios contratados, incluyendo la facturación y gestión administrativa.
                     </li>
                     <li>
-                        <strong>Mejora del servicio:</strong> Para analizar el uso de nuestra web mediante cookies (ver apartado de Cookies) y mejorar la experiencia de usuario.
+                        <strong>Mejora del servicio:</strong> Para garantizar el correcto funcionamiento técnico de la web (ver apartado de Cookies).
                     </li>
                 </ul>
 
@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
 
                 <h2 className="text-2xl font-bold mt-8 mb-4 text-slate-900">4. Destinatarios de los Datos</h2>
                 <p>
-                    Sus datos no serán cedidos a terceros, salvo obligación legal o cuando sea necesario para la prestación del servicio (por ejemplo, empresas de transporte o instaladores colaboradores, siempre bajo acuerdos de confidencialidad).
+                    Sus datos no serán cedidos a terceros con fines propios de estos, salvo obligación legal. Para gestionar su solicitud utilizamos proveedores que actúan como encargados del tratamiento: un servicio de automatización (n8n) para el envío de correos, así como, en su caso, instaladores colaboradores bajo acuerdos de confidencialidad.
                 </p>
 
                 <h2 className="text-2xl font-bold mt-8 mb-4 text-slate-900">5. Derechos del Usuario</h2>
@@ -67,7 +67,7 @@ export default function PrivacyPolicy() {
 
                 <h2 className="text-2xl font-bold mt-8 mb-4 text-slate-900">7. Uso de Cookies</h2>
                 <p>
-                    Este sitio web utiliza cookies propias y de terceros para mejorar la navegación y obtener datos estadísticos. Usted puede configurar su navegador para rechazar las cookies, aunque esto podría afectar al funcionamiento de la web.
+                    Este sitio web utiliza únicamente cookies técnicas necesarias para su funcionamiento; no utiliza cookies de análisis ni publicitarias. Usted puede configurar su navegador para rechazar las cookies, aunque esto podría afectar al funcionamiento de la web.
                 </p>
 
                 <h2 className="text-2xl font-bold mt-8 mb-4 text-slate-900">8. Cambios en la Política de Privacidad</h2>
@@ -76,7 +76,7 @@ export default function PrivacyPolicy() {
                 </p>
 
                 <p className="text-sm text-slate-500 mt-12">
-                    Última actualización: {new Date().toLocaleDateString('es-ES')}
+                    Última actualización: 7 de noviembre de 2026
                 </p>
             </div>
         </div>

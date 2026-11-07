@@ -2,7 +2,6 @@
 
 import { Phone, Mail, MapPin, Send, Loader2, CheckCircle, XCircle } from "lucide-react";
 import { useState } from "react";
-import { supabase } from "@/lib/supabase";
 
 export function ContactSection() {
     const [formData, setFormData] = useState({
@@ -29,7 +28,6 @@ export function ContactSection() {
         const formattedDate = `${now.getDate().toString().padStart(2, '0')}/${(now.getMonth() + 1).toString().padStart(2, '0')}/${now.getFullYear()} ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
 
         const data = {
-            access_key: "COLOQUE_AQUI_SUA_WEB3FORMS_KEY",
             Nombre: formData.nombre,
             Teléfono: formData.telefono,
             Email: formData.email,
@@ -40,36 +38,16 @@ export function ContactSection() {
         };
 
         try {
-            const { error: supabaseError } = await supabase
-                .from('clients')
-                .upsert({
-                    name: formData.nombre,
-                    whatsapp: formData.telefono.replace(/\D/g, ''),
-                    email: formData.email,
-                    postal_code: formData.codigoPostal,
-                    service_requested: formData.servicio,
-                    message: formData.mensaje,
-                    source: 'site',
-                    status: 'lead'
-                }, { onConflict: 'whatsapp' });
-
-            if (supabaseError) console.error("Error saving to Supabase:", supabaseError);
-
-            await Promise.allSettled([
-                fetch("https://api.web3forms.com/submit", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json", "Accept": "application/json" },
-                    body: JSON.stringify(data),
-                }),
-                fetch("https://fluxo.festivusia.com/webhook/emailpreventivasur", {
+            const webhook = await fetch("https://fluxo.preventivacentro.es/webhook/emailpreventivasur", {
                     method: "POST",
                     headers: { "Content-Type": "application/json", "Accept": "application/json" },
                     body: JSON.stringify({
                         ...data,
                         enviado_dt_hr: formattedDate,
                     }),
-                }),
-            ]);
+                });
+
+            if (!webhook.ok) throw new Error("No se pudo enviar el formulario");
 
             setStatus("success");
             setFormData({ nombre: "", telefono: "", email: "", codigoPostal: "", servicio: "Protección para Balcón", mensaje: "" });

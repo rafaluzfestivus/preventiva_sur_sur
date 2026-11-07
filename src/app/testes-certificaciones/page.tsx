@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         url: "https://preventivasur.com/testes-certificaciones",
         title: "Certificaciones y Resistencia de Redes | Preventiva Sur",
         description: "Calidad técnica certificada en Málaga. Resistencia de 150kg/m², tratamiento Anti-UV e instalación profesional.",
-        images: [{ url: "https://preventivasur.com/logo-preventiva-sur.png", alt: "Preventiva Sur" }],
+        images: [{ url: "https://preventivasur.com/Preventiva-Logo-Sur.png", alt: "Preventiva Sur" }],
     },
 };
 

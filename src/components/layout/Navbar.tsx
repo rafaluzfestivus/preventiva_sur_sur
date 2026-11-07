@@ -41,13 +41,13 @@ export function Navbar() {
                             {link.name}
                         </Link>
                     ))}
-                    <Link
-                        href="#contacto"
+                    <a
+                        href="tel:+34615744742"
                         className="bg-yellow-500 text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-yellow-600 transition-all flex items-center gap-2 shadow-lg hover:shadow-xl hover:scale-105"
                     >
                         <Phone className="w-4 h-4" />
                         Llamar Ahora
-                    </Link>
+                    </a>
                 </div>
                 <button
                     onClick={() => setIsOpen(!isOpen)}
@@ -81,7 +81,7 @@ export function Navbar() {
                             ))}
                             <div className="pt-4 border-t border-gray-100">
                                 <Link
-                                    href="#contacto"
+                                    href="/#contacto"
                                     onClick={() => setIsOpen(false)}
                                     className="bg-yellow-500 text-white w-full py-3 rounded-lg font-bold flex justify-center items-center gap-2 hover:bg-yellow-600 transition-colors"
                                 >

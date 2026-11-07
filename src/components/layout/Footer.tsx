@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
+import { Instagram, Phone, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
     return (
@@ -22,9 +22,6 @@ export function Footer() {
                             Seguridad certificada para balcones, ventanas, terrazas, niños y mascotas.
                         </p>
                         <div className="flex gap-4 pt-2">
-                            <a href="#" className="hover:text-yellow-400 transition-colors">
-                                <Facebook className="w-5 h-5" />
-                            </a>
                             <a href="https://www.instagram.com/preventiva_sur/" className="hover:text-rose-500 transition-colors" target="_blank" rel="noopener noreferrer">
                                 <Instagram className="w-5 h-5" />
                             </a>
@@ -85,7 +82,7 @@ export function Footer() {
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
                     <p>&copy; {new Date().getFullYear()} Preventiva Sur. Todos los derechos reservados.</p>
                     <div className="flex gap-6">
-                        <Link href="/politica-privacidad" className="hover:text-white transition-colors">Aviso Legal</Link>
+                        <Link href="/aviso-legal" className="hover:text-white transition-colors">Aviso Legal</Link>
                         <Link href="/politica-privacidad" className="hover:text-white transition-colors">Política de Privacidad</Link>
                         <Link href="/politica-privacidad" className="hover:text-white transition-colors">Cookies</Link>
                     </div>

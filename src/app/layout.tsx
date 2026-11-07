@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "Preventiva Sur",
     images: [
       {
-        url: "https://preventivasur.com/logo-preventiva-sur.png",
+        url: "https://preventivasur.com/Preventiva-Logo-Sur.png",
         width: 800,
         height: 600,
         alt: "Logo Preventiva Sur",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Preventiva Sur | Redes de Protección en Málaga",
     description: "Instalación profesional de redes de protección y mallas de seguridad en Málaga y Andalucía.",
-    images: ["https://preventivasur.com/logo-preventiva-sur.png"],
+    images: ["https://preventivasur.com/Preventiva-Logo-Sur.png"],
   },
   alternates: {
     canonical: "https://preventivasur.com",
@@ -57,9 +57,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/logo-preventiva-sur.png",
-    shortcut: "/logo-preventiva-sur.png",
-    apple: "/logo-preventiva-sur.png",
+    icon: "/Preventiva-Logo-Sur.png",
+    shortcut: "/Preventiva-Logo-Sur.png",
+    apple: "/Preventiva-Logo-Sur.png",
   },
 };
 
@@ -72,7 +72,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "Preventiva Sur",
-    "image": "https://preventivasur.com/logo-preventiva-sur.png",
+    "image": "https://preventivasur.com/Preventiva-Logo-Sur.png",
     "description": "Especialistas en instalación de redes de protección y mallas de seguridad para balcones, ventanas y terrazas en Málaga y Andalucía.",
     "address": {
       "@type": "PostalAddress",

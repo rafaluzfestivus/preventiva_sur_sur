@@ -9,7 +9,8 @@ export function CookieConsent() {
 
     useEffect(() => {
         const consent = localStorage.getItem("cookieConsent");
-        if (!consent) setIsVisible(true);
+        const id = setTimeout(() => setIsVisible(!consent), 0);
+        return () => clearTimeout(id);
     }, []);
 
     const acceptCookies = () => {
@@ -24,8 +25,7 @@ export function CookieConsent() {
             <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
                 <div className="text-sm text-slate-300">
                     <p>
-                        Utilizamos cookies propias y de terceros para mejorar su experiencia y nuestros servicios, analizando la navegación en nuestro sitio web.
-                        Si continúa navegando, consideramos que acepta su uso. Puede obtener más información en nuestra{" "}
+                        Utilizamos únicamente cookies técnicas necesarias para el funcionamiento del sitio; no usamos cookies de análisis ni publicidad. Más información en nuestra{" "}
                         <Link href="/politica-privacidad" className="text-yellow-400 hover:text-yellow-300 underline">
                             Política de Privacidad
                         </Link>.

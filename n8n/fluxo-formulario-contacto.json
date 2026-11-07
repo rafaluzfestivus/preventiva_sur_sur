@@ -1,0 +1,63 @@
+{
+  "name": "Preventiva Sur - Formulario de contacto",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "emailpreventivasur",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "https://preventivasur.com,https://www.preventivasur.com"
+        }
+      },
+      "id": "a1f0c7e2-0001-4a00-9000-000000000001",
+      "name": "Webhook formulario",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "emailpreventivasur"
+    },
+    {
+      "parameters": {
+        "fromEmail": "Preventiva Sur Web <contacto@preventivasur.com>",
+        "toEmail": "contacto@preventivasur.com",
+        "subject": "=Nuevo mensaje web: {{ $json.body['Nombre'] }} ({{ $json.body['Servicio'] }})",
+        "emailFormat": "text",
+        "text": "=Nuevo mensaje desde preventivasur.com\n\nNombre: {{ $json.body['Nombre'] }}\nTeléfono: {{ $json.body['Teléfono'] }}\nEmail: {{ $json.body['Email'] }}\nCódigo postal: {{ $json.body['Código Postal'] }}\nServicio: {{ $json.body['Servicio'] }}\n\nMensaje:\n{{ $json.body['Mensaje'] }}\n\nEnviado: {{ $json.body['enviado_dt_hr'] }}\nLlamar / WhatsApp: {{ $json.body['Teléfono'] }}",
+        "options": {
+          "replyTo": "={{ $json.body['Email'] }}"
+        }
+      },
+      "id": "a1f0c7e2-0002-4a00-9000-000000000002",
+      "name": "Enviar email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [260, 0],
+      "credentials": {
+        "smtp": {
+          "id": "CONFIGURAR",
+          "name": "SMTP Preventiva Sur"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { \"ok\": true } }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "a1f0c7e2-0003-4a00-9000-000000000003",
+      "name": "Responder OK",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [520, 0]
+    }
+  ],
+  "connections": {
+    "Webhook formulario": { "main": [[{ "node": "Enviar email", "type": "main", "index": 0 }]] },
+    "Enviar email": { "main": [[{ "node": "Responder OK", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" }
+}

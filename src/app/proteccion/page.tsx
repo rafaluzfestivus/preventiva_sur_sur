@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         url: "https://preventivasur.com/proteccion",
         title: "Redes de Protección en Málaga | Niños, Gatos y Aves",
         description: "Protección integral para tu hogar en Málaga. Mallas certificadas para seguridad infantil, protección de gatos y control de aves.",
-        images: [{ url: "https://preventivasur.com/logo-preventiva-sur.png", alt: "Preventiva Sur" }],
+        images: [{ url: "https://preventivasur.com/Preventiva-Logo-Sur.png", alt: "Preventiva Sur" }],
     },
 };
 
